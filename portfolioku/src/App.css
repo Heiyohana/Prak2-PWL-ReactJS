@@ -1,0 +1,62 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
+/* Base Style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #fff7cd;
+  --main-color: #ffc711;
+  --heading-color: #d45900;
+}
+
+body {
+  /* background-image: url(./assets/bg.jpg); */
+  background-color: var(--background-color);
+  /* background-size: cover; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5{
+  color: var(--heading-color);
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+}
+
+h1,h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  color: var(--heading-color);
+  opacity: 75%;
+  font-size: 1rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a:hover{
+  color: unset;
+}
+
+.btn {
+  background-color: var(--main-color);
+}

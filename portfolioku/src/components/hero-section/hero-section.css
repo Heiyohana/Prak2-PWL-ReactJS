@@ -1,0 +1,39 @@
+:root {
+    --background-color: #fff7cd;
+    --main-color: #ffc711;
+    --heading-color: #d45900;
+}
+
+.hire-btn {
+    background-color: var(--heading-color);
+    color: #fff7cd;
+}
+
+.hire-btn a {
+    font-weight: 700;
+}
+
+.hire-btn:hover a {
+    color: #ffc711;
+}
+
+.hire-btn span {
+    color: var(--heading-color);
+}
+
+.hero-title {
+    font-weight: 700;
+}
+
+.hero-img {
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+    text-align: center;
+    background: #ffc711;
+    margin-left: auto;
+}
+
+.hero-section {
+    padding-top: 150px;
+}

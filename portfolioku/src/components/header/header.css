@@ -1,0 +1,47 @@
+:root {
+    --background-color: #fff7cd;
+    --main-color: #ffc711;
+    --heading-color: #d45900;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo h5{
+    font-size: 1.3rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.nav-item a:hover{
+    color: var(--main-color);
+}
+
+.nav-item a{
+    color: var(--heading-color);
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.mobile-menu i{
+    color: var(--heading-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+}
