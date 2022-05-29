@@ -1,7 +1,9 @@
 :root {
-    --background-color: #fff7cd;
-    --main-color: #ffc711;
-    --heading-color: #d45900;
+    --background-color: #0b2908;
+    --light-color: #8bc371;
+    --second-color: #2d4615;
+    --text-color: #ffffff;
+    --hover-color: #ffc711;
 }
 
 .header {
@@ -25,11 +27,11 @@
 }
 
 .nav-item a:hover{
-    color: var(--main-color);
+    color: var(--hover-color);
 }
 
 .nav-item a{
-    color: var(--heading-color);
+    color: var(--light-color);
     transition: 0.3s;
     text-decoration: none;
     cursor: pointer;
@@ -37,7 +39,7 @@
 }
 
 .mobile-menu i{
-    color: var(--heading-color);
+    color: var(--light-color);
     font-size: 1.3rem;
     cursor: pointer;
 }

@@ -1,0 +1,63 @@
+:root {
+    --background-color: #0b2908;
+    --light-color: #8bc371;
+    --heading-color: #2d4615;
+    --text-color: #ffffff;
+    --hover-color: #ffc711;
+}
+
+.about-btns {
+    background-color: var(--heading-color);
+    border-radius: 10px;
+}
+
+.about-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: var(--text-color);
+    background: transparent;
+    border-bottom: 1px solid #ceff9c;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.about-btn-active {
+    background: var(--light-color);
+    color: var(--background-color);
+    font-weight: 700;
+}
+
+.about-btn:last-child{
+    border-bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.about-content-wrapper {
+    background: var(--heading-color);
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.about-content h2 {
+    margin-bottom: 5px;
+}
+
+.about-content p {
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.social-links span a i{
+    color: var(--background-color);
+    margin: 0;
+}
+.social-links span{
+    margin-right: 15px;
+}
+
+.about-img {
+    background: var(--light-color);
+    border-radius: 5px;
+    height: 188px;
+}

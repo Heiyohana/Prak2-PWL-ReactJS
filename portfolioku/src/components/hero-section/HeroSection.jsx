@@ -1,25 +1,43 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react';
 import './hero-section.css';
+
+import { init } from 'ityped';
 
 import { Container, Row, Col } from 'reactstrap';
 
-import heroImg from '../../assets/fotoku.png';
+import heroImg from '../../assets/Mia.png';
 
 const HeroSection = () => {
+  const textRef = useRef();
+
+  useEffect(()=>{
+    init(textRef.current, {
+        backDelay: 1500,
+        showCursor: true,
+        strings:[
+            'Hendamia Yohana',
+            'a Web Developer',
+            'a College Student'
+        ]
+    })
+  }, [])
+
   return (
   <section className='hero-section' id='home'>
       <Container>
           <Row>
               <Col lg='6' md='6'>
                   <div className='hero-content'>
-                    <p>Welcome to My Portofolio</p>
-                    <h5>Hi</h5>
-                    <h2 className='hero-title'>I'm <span>Hendamia Yohana Sembiring</span></h2>
-                    <p>Saya merupakan seorang mahasiswa di Institut Teknologi Sumatera
-                    program studi Teknik Informatika.</p>
+                    <p className='mb-3'>Hi, Everybody!</p>
+                    <h2 className='hero-title mb-4'>
+                        I'm <span ref={textRef}></span>
+                    </h2>
+                    <p>I am a student at the Sumatra Institute of Technology, Informatics Engineering study program. 
+                    I am a student who is quite active in several organizations and is very responsible. I am interested 
+                    in Web Developer, Ui/ux Designer and Graphic Designer.</p>
 
-                    <div className='hero-btns d-flex align-items-center gap-4'>
-                        <button className='btn'><a href='#'>Hire Me</a></button>
+                    <div className='mt-5 hero-btns d-flex align-items-center gap-4'>
+                        <button className='hire-btn'><a href='/'>Hire Me</a></button>
                         <button className='btn'>Contact</button>
                     </div>
                   </div>

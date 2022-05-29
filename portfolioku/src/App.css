@@ -9,9 +9,11 @@
 }
 
 :root {
-  --background-color: #fff7cd;
-  --main-color: #ffc711;
-  --heading-color: #d45900;
+  --background-color: #0b2908;
+  --light-color: #8bc371;
+  --heading-color: #2d4615;
+  --text-color: #ffffff;
+  --hover-color: #ffc711;
 }
 
 body {
@@ -25,7 +27,7 @@ html {
 }
 
 h1, h2, h3, h4, h5{
-  color: var(--heading-color);
+  color: var(--light-color);
   font-family: 'Titillium Web', sans-serif;
   margin: 0;
 }
@@ -36,10 +38,11 @@ h1,h2 {
 }
 
 p {
-  color: var(--heading-color);
+  color: var(--text-color);
   opacity: 75%;
   font-size: 1rem;
   font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
 }
 
 ul {
@@ -58,5 +61,9 @@ a:hover{
 }
 
 .btn {
-  background-color: var(--main-color);
+  background-color: var(--light-color);
+}
+
+section, footer {
+  padding: 60px 0px;
 }

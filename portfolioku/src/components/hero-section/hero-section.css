@@ -1,24 +1,32 @@
 :root {
-    --background-color: #fff7cd;
-    --main-color: #ffc711;
-    --heading-color: #d45900;
+    --background-color: #0b2908;
+    --light-color: #8bc371;
+    --heading-color: #2d4615;
+    --text-color: #ffffff;
+    --hover-color: #ffc711;
+}
+
+.btn {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
 }
 
 .hire-btn {
-    background-color: var(--heading-color);
-    color: #fff7cd;
+    background-color: var(--light-color);
+    color: var(--background-color);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
 }
 
-.hire-btn a {
-    font-weight: 700;
-}
-
-.hire-btn:hover a {
-    color: #ffc711;
-}
-
-.hire-btn span {
-    color: var(--heading-color);
+.hire-btn:hover {
+    background-color: var(--hover-color);
+    color: var(--background-color);
+    padding: 8px;
+    border: 3px;
+    border-color: var(--light-color);
+    border-radius: 5px;
 }
 
 .hero-title {
@@ -26,14 +34,19 @@
 }
 
 .hero-img {
-    width: 400px;
+    width: 450px;
     height: auto;
     border-radius: 30px;
     text-align: center;
-    background: #ffc711;
+    background: var(--heading-color);
     margin-left: auto;
 }
 
 .hero-section {
     padding-top: 150px;
+}
+
+.hero-content p {
+    line-height: 30px;
+    font-weight: 400;
 }
