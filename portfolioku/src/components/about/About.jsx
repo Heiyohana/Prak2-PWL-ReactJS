@@ -22,8 +22,10 @@ const About = () => {
                 <div className='about-btns d-flex flex-column align-items-center'>
                     <button className={`about-btn ${aboutFilter === 'ABOUT' ? 'about-btn-active' : ''}`} 
                             onClick={()=>setAboutFilter('ABOUT')}>About Me</button>
-                    <button className='about-btn' onClick={()=>setAboutFilter('EDUCATION')}>Education</button>
-                    <button className='about-btn' onClick={()=>setAboutFilter('SKILLS')}>Skills</button>
+                    <button className={`about-btn ${aboutFilter === 'EDUCATION' ? 'about-btn-active' : ''}`} 
+                            onClick={()=>setAboutFilter('EDUCATION')}>Education</button>
+                    <button className={`about-btn ${aboutFilter === 'SKILLS' ? 'about-btn-active' : ''}`}  
+                            onClick={()=>setAboutFilter('SKILLS')}>Skills</button>
                 </div>
             </Col>
 
