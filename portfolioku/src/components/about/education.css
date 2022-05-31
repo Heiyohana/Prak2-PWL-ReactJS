@@ -1,0 +1,33 @@
+:root {
+    --background-color: #0b2908;
+    --light-color: #8bc371;
+    --heading-color: #2d4615;
+    --text-color: #ffffff;
+    --hover-color: #ffc711;
+}
+
+.table {
+    border: none;
+    border-collapse: collapse;
+    border: 1px solid --light-color;
+}
+
+th, td {
+    padding: 0.8rem 1rem !important;
+    font-size: 1rem;
+}
+
+thead{
+    background: var(--light-color);
+    color: var(--background-color);
+}
+
+td{
+    font-size: 0.8rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+tr:nth-child(even) {
+    background: var(--light-color);
+}

@@ -1,0 +1,21 @@
+:root {
+    --background-color: #0b2908;
+    --light-color: #8bc371;
+    --heading-color: #2d4615;
+    --text-color: #ffffff;
+    --hover-color: #ffc711;
+}
+
+.skills__wrapper{
+    background: var(--light-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skill__title span{
+    color: var(--text-color);
+}
+
+.skill__title{
+    margin-bottom: 10px;
+}
